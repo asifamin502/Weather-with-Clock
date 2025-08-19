@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ color: whitesmoke;
+}
+
+body{
+      background-image: url('autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai.jpg');
+      background-size: cover;
+      font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+display: flex;
+gap: 5%;
+padding: 10%;
+
+border-radius: 10px;
+
+}
+
+.weather{
+   background-color: rgba(0, 255, 170, 0.104);
+border-radius: 30px;
+ backdrop-filter: blur(5px);
+ height: 60vh;
+ width: 60vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+    justify-content: center;
+    
+
+
+
+}
+
+.weather h1{
+    font-size: 3rem;
+    text-align: center;
+    
+    text-decoration: double underline;
+}
+
+.weatherinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+
+.weatherinfo h3, h2{
+padding-left: 10%;
+font-size: 1.5rem;
+text-align: center;
+
+}
+.search{
+    width: 50%;
+    height: 25%;
+    border-radius: 20px;
+    border: none;
+   margin-left: 15%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding-left: 2%;
+}
+
+.clock{
+
+
+ background-color: rgba(14, 56, 103, 0.104);
+border-radius: 30px;
+ backdrop-filter: blur(10px);
+  height: 40vh;
+   width: 30vw;
+   margin-top: 5%;
+}
+
+.clock h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: double underline;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.time{
+display: flex;
+
+}
+.time p{
+font-size: 3rem;
+margin: 0 auto;
+padding-top: 12%;
+
+}
+
+.weather img {
+    width: 5vw;
+    height: 10vh;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transform: scale(1);
+    top: 40%;
+}
+/* .weather .current {
+    width: 5vw;
+    height: 10vh;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    transform: scale(1);
+    top: 40%;
+}
+ */
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url('autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        
+    }
+    
+ .weather {
+        width: 90vw;
+        height: 30vh;
+        margin: 0 auto;
+        gap: 1%;
+    }
+
+    .clock{
+        width: 90vw;
+        height: 20vh;
+        margin: 0 auto;
+
+    }
+    
+    .clock h1, .weather h1 {
+        font-size: 1.3rem;
+    }
+    
+    .time p {
+        font-size: 1.3rem;
+        padding-top: 10%;
+    }
+    
+    body {
+        padding: 5%;
+    }
+
+    .date p{
+        font-size: 1rem;
+    }
+
+    .weather .search{
+width: 70%;
+font-size: 0.5rem;
+
+    }
+    .weather .search:placeholder{
+
+    }
+
+    .weather .image img{
+        height: 40px;
+        width: 50px;
+        padding-left: 10%;
+    }
+ .weatherinfo .temp, .temp2 ,.location , .description{
+    font-size: 0.8rem;
+ }
+
+.weatherinfo h3{
+    font-size: 0.8rem;
+}
+.weatherinfo .location, .description{
+
+   text-align: center;
+}
+
+
+}
+
