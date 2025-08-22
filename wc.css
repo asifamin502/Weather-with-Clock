@@ -52,6 +52,8 @@ border-radius: 30px;
     flex-direction: column;
     padding-top: 5%;
     padding-left: 10%;
+   position: relative;
+   bottom: 15%;
 }
 
 
@@ -71,6 +73,15 @@ text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
     padding-left: 2%;
+    color: black;
+    display: flex;
+}
+.button{
+    color: black;
+    width: 15%;
+    border-radius: 10px;
+    height: 30%;
+    margin-top: 5%;
 }
 
 .clock{
@@ -112,13 +123,13 @@ padding-top: 12%;
 }
 
 .weather img {
-    width: 5vw;
-    height: 10vh;
-    display: block;
+    width: 8vw;
+    height: 13vh;
+    
     margin: 0 auto;
     position: relative;
-    transform: scale(1);
-    top: 40%;
+    left: 40%;
+    top: -20%;
 }
 /* .weather .current {
     width: 5vw;
@@ -145,7 +156,7 @@ padding-top: 12%;
         width: 90vw;
         height: 30vh;
         margin: 0 auto;
-        gap: 1%;
+    
     }
 
     .clock{
@@ -197,6 +208,12 @@ font-size: 0.5rem;
 
    text-align: center;
 }
+
+.button{
+    color: black;
+    width: 35%;
+   font-size: 0.6rem;
+   margin-top: 15%;
 
 
 }

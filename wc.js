@@ -81,15 +81,19 @@ const temphtml2 = weatherinfohtml.querySelector(".temp2");
 const locationhtml = weatherinfohtml.querySelector(".location");
 
 const descriptionhtml = weatherinfohtml.querySelector(".description");
-const searchhtml = weatherhtml.querySelector(".search");
+const searchhtml = weatherhtml.querySelector("input#search");
 const imagehtml = weatherhtml.querySelector(".current");
+const buttonhtml = weatherhtml.querySelector(".button");
+
+   const apikey="865dd24273fb4307ab8111456251808";
+buttonhtml.addEventListener("click",()=>{
+ 
+const city = searchhtml.value;
+console.log(city);
 
 
-const apikey="865dd24273fb4307ab8111456251808";
 
-
-setInterval(() => {
-const url = `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=Dhaka&aqi=no`;
+const url = `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}&aqi=no`;
 fetch(url)
 .then(response => response.json())
 .then(data => {
@@ -98,7 +102,7 @@ locationhtml.innerHTML=`${data.location.name}, ${data.location.country}`;
 descriptionhtml.innerHTML=`${data.current.condition.text}`;
 
 const imgurl=`https:${data.current.condition.icon}`;
- imagehtml.src= imgurl;
+ imagehtml.src = imgurl;
 
 
 temphtml.innerHTML = `${data.current.temp_c}°C`;
@@ -115,6 +119,15 @@ feelslike_c}°C`;
 
 
     
-}, 3000);
+
+
+
+
+})
+
+
+
+
+
 
 
